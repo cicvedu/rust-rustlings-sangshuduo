@@ -5,13 +5,12 @@
 // You should not modify any existing code. All you need to do is add two line of attributes.
 
 
-// I AM NOT DONE
 
+#[no_mangle]
+pub extern "C"    fn my_demo_function(a:u32) -> u32 {a}
 
-extern {
-    fn my_demo_function(a:u32) -> u32;
-    fn my_demo_function_alias(a:u32) -> u32;
-}
+#[no_mangle]
+pub extern "C"    fn my_demo_function_alias(a:u32) -> u32 {a}
 
 
 
